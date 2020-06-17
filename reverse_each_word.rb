@@ -7,3 +7,15 @@ def reverse_each_word(sentence)
   return_string = return_array.join(" ")
   return return_string
 end
+
+
+def reverse_each_word(sentence)
+  new_array = sentence.split(" ")
+  return_array = []
+  return_string = ""
+  new_array.collect do | word |
+    return_string = return_string + word.reverse
+  end
+  return return_string
+end
+    
