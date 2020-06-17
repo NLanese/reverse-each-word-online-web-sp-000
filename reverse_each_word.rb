@@ -19,4 +19,3 @@ def reverse_each_word(sentence)
   return_string = return_array.join(" ")
   return return_string
 end
-    
