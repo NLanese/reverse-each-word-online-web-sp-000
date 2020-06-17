@@ -14,8 +14,9 @@ def reverse_each_word(sentence)
   return_array = []
   return_string = ""
   new_array.collect do | word |
-    return_string = return_string + word.reverse
+    return_array << word.reverse
   end
+  return_string = return_array.join(" ")
   return return_string
 end
     
